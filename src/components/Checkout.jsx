@@ -34,7 +34,7 @@ export default function Checkout() {
       },
       body: JSON.stringify({
         order: {
-          items:cartCtx.items,
+          items: cartCtx.items,
           customer: customerData,
         },
       }),

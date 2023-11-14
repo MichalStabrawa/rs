@@ -9,11 +9,6 @@ export default function MealItem({ meal }) {
    const cartCrx = useContext(CartContext);
   function handleAddMealToCart() {cartCrx.addItem(meal)}
 
- const test  = cartCrx
-
-  console.log("TEST");
-  console.log(test);
-
   return (
     <li className="meal-item">
       <article>

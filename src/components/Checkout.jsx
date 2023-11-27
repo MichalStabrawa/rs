@@ -25,7 +25,6 @@ export default function Checkout() {
 
     const fd = new FormData(event.target);
     const customerData = Object.fromEntries(fd.entries());
-    console.log(customerData);
 
     fetch(url, {
       method: "POST",
@@ -34,7 +33,7 @@ export default function Checkout() {
       },
       body: JSON.stringify({
         order: {
-          items:cartCtx.items,
+          items: cartCtx.items,
           customer: customerData,
         },
       }),

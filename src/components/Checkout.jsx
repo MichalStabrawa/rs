@@ -25,7 +25,6 @@ export default function Checkout() {
 
     const fd = new FormData(event.target);
     const customerData = Object.fromEntries(fd.entries());
-    console.log(customerData);
 
     fetch(url, {
       method: "POST",
